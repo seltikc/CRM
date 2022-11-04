@@ -10,16 +10,17 @@ const guessTheNumber = () => {
         if (userNumber === 0) {
             alert('Игра окончена');
             return;
-        } else if (Number.isNaN(userNumber)) {
+        } if (Number.isNaN(userNumber)) {
             alert('Введи число');
-        } else if (userNumber > gameNumber) {
+        } if (userNumber > gameNumber) {
             alert('Меньше!');
-        } else if (userNumber < gameNumber) {
+        } if (userNumber < gameNumber) {
             alert('Больше!');
-        } else if (userNumber === gameNumber) {
+        } if (userNumber === gameNumber){
             alert('Правильно');
         }
     }
 }
+
 
 guessTheNumber();
